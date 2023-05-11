@@ -1,0 +1,57 @@
+<main class="vigenere__wrapper" id="vigenere">
+
+  <title>Encryption Machine</title>
+  <link rel="stylesheet" href="ciphstyle.css">
+
+  <h1 class="ciph__title">
+    VIGENERE ENCRYPTION MACHINE
+  </h1>
+  <img class="image__cipher" src="cipherdisc.jpg" alt="Cipher Disc" >
+  <body>
+    <form>
+          <div class="vigenere__modes">
+            <div class="vigenere__radio">
+               <input type="radio" id="encrypt" value="true" name="mode_chosen" checked>
+               <label for="encrypt">Encrypt</label>
+            </div>
+            <div class="vigenere__radio">
+               <input type="radio" id="decrypt" value="false" name="mode_chosen">
+               <label for="decrypt">Decrypt</label>
+            </div>
+          </div>
+     </form>
+
+     <textarea class="vigenere__input" rows="5" placeholder="Enter message here" id="message"></textarea>
+
+     <div class="vigenere__key">
+       Secret Key: <input type="text" placeholder="Enter key here" id="key">
+     </div>
+
+     <div class="button__class">
+       <input id="btn" class="submit__button" type="button" value="Submit" onclick="chooseFunc()"><br>
+     </div>
+
+     <br>
+     <br>
+
+     <div class="vigenere__message">
+        <h3 class="vigenere__message-banner" id="">
+          <div id="vigenere__banner">Your Encrypted Message</div>
+        </h3>
+        <div id="resulting__message"></div>
+     </div>
+
+     <br>
+
+     <div class="button__class">
+       <input id="btn2" class="submit__button" type="button" value="Copy Text" onclick="copyToClipboard()"><br>
+     </div>
+
+
+     <script src="cipherfunc.js"></script>
+     <script src="http://localhost:35729/livereload.js"></script>
+  </body>
+</main>
+
+
+http://localhost:35729/livereload.js
